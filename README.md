@@ -27,6 +27,7 @@ Database access will be done using the `db.js` file included inside the `data` f
 
 The `db.js` publishes the following methods.
 
+
 - `find()`: calling find returns a promise that resolves to an array of all the `posts` contained in the database.
 - `findById()`: this method expects an `id` as it's only parameter and returns a promise that resolves to the post corresponding to the `id` provided or an empty array if no post with that `id` is found.
 - `insert()`: calling insert passing it a `post` object will add it to the database and return a promise that resolves to an object with the `id` of the inserted post. The object looks like this: `{ id: 123 }`.
